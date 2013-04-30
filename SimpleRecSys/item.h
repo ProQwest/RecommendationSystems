@@ -1,16 +1,15 @@
 /*
  * =====================================================================================
  *
- *       Filename:  user.h
+ *       Filename:  item.h
  *
- *    Description:
+ *    Description:  Modeling object representation for users and ads
+ *                  Currently modeling both users and ads as 'items'
  *
  *        Version:  1.0
- *       Revision:  none
  *       Compiler:  g++
  *
  *         Author:  Vishal Surana (), surana.vishal@gmail.com
- *   Organization:
  *
  * =====================================================================================
  */
@@ -42,18 +41,3 @@ Item::~Item() {
  	likes.clear();
 	similaritems.clear();
 }
-
-/// Due to time constraints, I'm modeling both Ad and User objects as Items
-/**
-class User: public item {
-
-}
-
-class Ad: public item {
-
-
-//	public:
-//		std::string name;
-}
-
-*/
