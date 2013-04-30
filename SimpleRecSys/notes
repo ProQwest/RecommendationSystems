@@ -1,0 +1,13 @@
+My first attempt at collaborative filtering/recommendation systems. This uses past click data to suggest newer ads/products to users
+
+Instead of recommending just one item, the code recommends 'N' items which can be provided as a runtime parameter. Additionally, I have implemented two recommendation algorithms- one which finds similar users and then recommends based on their profile and another which finds similar ads and picks among them. If you wish to study only one of them, then you can disable the other in the main function (last few lines of rec.cpp). Similarly,
+
+Compile: g++ -g -o rec rec.cpp
+Run Command: Executable user-file ad-file items-to-recommend >OutputFileName
+
+You will get two files- similarAds.csv and similarUsers.csv. These outputs correspond to the two algorithms that I have implemented. The output of the recommendation engine will not be the same always. You can use the console output for debug purposes. You will have to scroll down to the bottom of OutputFileName to see the actual recommendations. There is a lot of debug information at the top
+
+Future improvements:
+    * We can also have a weighted function to choose between the two algorithms
+    * Currently, we're using similarity based recommendation. This can be modified by using better clustering algorithms to find similar ads and users. We can also make use of matrix factorization and other advanced techniques.
+    * I did not focus on runtime efficiency. There are several obvious optimizations
